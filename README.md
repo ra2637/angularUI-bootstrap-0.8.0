@@ -75,6 +75,7 @@ We are always looking for the quality contributions! Please check the [CONTRIBUT
 * Install [Node.js](http://nodejs.org/) and NPM (should come with)
 * Install global dev dependencies: `npm install -g grunt-cli karma`
 * Instal local dev dependencies: `npm install` while current directory is bootstrap repo
+* Start local server to read the doc: `npm install grunt-contrib-connect`
 
 #### Build
 * Build the whole project: `grunt` - this will run `lint`, `test`, and `concat` targets
@@ -163,3 +164,10 @@ For more information visit: https://github.com/karlgoldstein/grunt-html2js
 * publish Bower and NuGet packages
 
 Well done! (If you don't like repeating yourself open a PR with a grunt task taking care of the above!)
+
+### Start local server for Docs
+* environment prepare: `npm install grunt-contrib-connect`
+* start server (use 9001 port): `grunt connect`
+
+Enjob the doc at http://localhost:9001
+
