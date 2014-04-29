@@ -16,6 +16,7 @@
     "grunt-karma": "~0.4.4",
     "node-markdown": "0.1.1",
     "semver": "~1.1.4",
-    "shelljs": "~0.1.4"
+    "shelljs": "~0.1.4",
+    "grunt-contrib-connect": "~0.7.1"
   }
 }

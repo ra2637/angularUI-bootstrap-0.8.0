@@ -11,6 +11,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-conventional-changelog');
   grunt.loadNpmTasks('grunt-ngdocs');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   // Project configuration.
   grunt.util.linefeed = '\n';
@@ -189,6 +190,16 @@ module.exports = function(grunt) {
         src: ["src/**/*.js", "src/**/*.ngdoc"],
         title: "API Documentation"
       }
+    },
+    connect:{
+        server:{
+          options:{
+            port:9001,
+            hostname:'0.0.0.0',
+            base:'./dist/',
+            keepalive:true
+          }
+        }
     }
   });
 
